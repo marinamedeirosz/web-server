@@ -3,72 +3,94 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Equipe</title>
+        <title>Equipe - Servidor Web Java</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
-                color: #333;
+                background-color: #eef2f7;
+                color: #222;
                 margin: 20px;
+                line-height: 1.6;
+            }
+            header {
+                border-bottom: 2px solid #4a90e2;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
             }
             h1 {
                 color: #4a90e2;
+                margin: 0;
             }
-            .team-container {
-                display: flex;
-                gap: 20px;
-                margin-top: 20px;
-                flex-wrap: wrap;
-            }
-            .member {
-                background: white;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-                padding: 15px;
-                flex: 1 1 200px;
-                max-width: 250px;
-                text-align: center;
-            }
-            .member h2 {
-                margin-top: 0;
-                color: #2c3e50;
-            }
-            .member p {
-                font-size: 0.9em;
-                color: #555;
-            }
-            a {
-                color: #4a90e2;
+            nav a {
+                margin-right: 15px;
                 text-decoration: none;
+                color: #4a90e2;
+                font-weight: bold;
             }
-            a:hover {
+            nav a:hover {
                 text-decoration: underline;
             }
-            nav {
-                margin-top: 20px;
+            section ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            section li {
+                margin-bottom: 15px;
+                background: #fff;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px #ccc;
+                max-width: 400px;
+            }
+            footer {
+                font-size: 0.9em;
+                color: #555;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+                margin-top: 40px;
+                text-align: center;
+            }
+            a.repo-link {
+                color: #4a90e2;
+                font-weight: bold;
+            }
+            a.repo-link:hover {
+                text-decoration: underline;
             }
         </style>
     </head>
     <body>
+
+    <header>
         <h1>Equipe do Projeto</h1>
-
-        <div class="team-container">
-            <div class="member">
-                <h2>Marina Medeiros Correia de Paffer</h2>
-                <p><a href="mailto:mmcp1@aluno.ifal.edu.br">mmcp1@aluno.ifal.edu.br</a></p>
-            </div>
-            <div class="member">
-                <h2>Matheus Alexandre Tenório Matta</h2>
-                <p><a href="mailto:matheusalexandre2004@gmail.com">matheusalexandre2004@gmail.com</a></p>
-            </div>
-            <div class="member">
-                <h2>Pedro Roberto Chicuta da Silva</h2>
-                <p><a href="mailto:pedrocht14@gmail.com">pedrocht14@gmail.com</a></p>
-            </div>
-        </div>
-
         <nav>
-            <a href="index.html">Voltar para a página inicial</a>
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="team.html">Equipe</a>
         </nav>
+    </header>
+
+    <section>
+        <ul>
+            <li>
+                <strong>Marina Medeiros Correia de Paffer</strong><br />
+                E-mail: mmcp1@aluno.ifal.edu.br
+            </li>
+            <li>
+                <strong>Matheus Alexandre Tenório Matta</strong><br />
+                E-mail: matheusalexandre2004@gmail.com
+            </li>
+            <li>
+                <strong>Pedro Roberto Chicuta da Silva</strong><br />
+                E-mail: pedrocht14@gmail.com
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Projeto criado para a disciplina de Fundamentos de Redes de Computadores.</p>
+        <p>Repositório no GitHub: <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">https://github.com/marinamedeirosz/web-server</a></p>
+    </footer>
+
     </body>
 </html>

@@ -1,47 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Página Inicial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 20px;
-        }
-        h1 {
-            color: #4a90e2;
-        }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <h1>Bem-vindo ao Servidor Java!</h1>
-    <p>Esta é a página inicial (index.html) do seu projeto de servidor web.</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Servidor Web Java - Projeto Final</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #eef2f7;
+                color: #222;
+                margin: 20px;
+                line-height: 1.6;
+            }
+            header {
+                border-bottom: 2px solid #4a90e2;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            h1 {
+                color: #4a90e2;
+                margin: 0;
+            }
+            nav a {
+                margin-right: 15px;
+                text-decoration: none;
+                color: #4a90e2;
+                font-weight: bold;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            section {
+                margin-bottom: 30px;
+            }
+            footer {
+                font-size: 0.9em;
+                color: #555;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+                margin-top: 40px;
+                text-align: center;
+            }
+            a.repo-link {
+                color: #4a90e2;
+                font-weight: bold;
+            }
+            a.repo-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Servidor Web Multithread em Java</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="team.html">Equipe</a>
+            </nav>
+        </header>
 
-    <nav>
-        <a href="about.html">Sobre</a> | 
-        <a href="team.html">Equipe</a>
-    </nav>
+        <section>
+            <h2>Descrição do Projeto</h2>
+            <p>Este projeto implementa um servidor web simples em Java que escuta conexões TCP, processa requisições HTTP e serve arquivos estáticos de forma multithread, permitindo atender vários clientes simultaneamente.</p>
+        </section>
 
-    <footer>
-        <p>Veja o código-fonte no <a href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-    </footer>
-</body>
+        <section>
+            <h2>Como Usar</h2>
+            <ol>
+                <li>Coloque seus arquivos HTML e TXT dentro da pasta <code>wwwroot</code>.</li>
+                <li>Compile os arquivos Java na pasta <code>src</code> (separados) ou diretamente no diretório do projeto.</li>
+                <li>Execute o servidor usando: <code>java MultiThreadedWebServer [porta]</code> (padrão 8080).</li>
+                <li>Acesse no navegador: <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080</a>.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tecnologias Utilizadas</h2>
+            <ul>
+                <li>Java SE (Sockets, Threads)</li>
+                <li>HTTP 1.0 - Protocolo para comunicação cliente-servidor</li>
+                <li>HTML e CSS para páginas estáticas</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Projeto criado para a disciplina de Fundamentos de Redes de Computadores.</p>
+            <p>Repositório no GitHub: <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">https://github.com/marinamedeirosz/web-server</a></p>
+        </footer>
+    </body>
 </html>
