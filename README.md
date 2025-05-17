@@ -84,7 +84,7 @@ Você deve ver o conteúdo do arquivo `index.html`.
 Para acessar outros arquivos, use a URL com o nome do arquivo, por exemplo:
 
 ```
-http://localhost:8080/docs/manual.txt
+http://localhost:8080/team.html
 ```
 
 ---
@@ -95,8 +95,8 @@ http://localhost:8080/docs/manual.txt
 /web-server/
 ├── wwwroot/
 │   ├── index.html
-│   └── docs/
-│       └── manual.txt
+│   ├── team.html
+│   └── about.html
 ├── src/
 │   ├── MultiThreadedWebServer.java
 │   └── ClientHandler.java
