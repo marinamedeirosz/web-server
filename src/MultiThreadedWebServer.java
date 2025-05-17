@@ -20,8 +20,7 @@ public class MultiThreadedWebServer {
 
             while (true) {
                 Socket clientSocket = serverSocket.accept();
-                System.out.println("Cliente conectado: " + clientSocket.getInetAddress());
-                new Thread(new ClientHandler(clientSocket)).start();
+             new Thread(new ClientHandler(clientSocket)).start();
             }
 
         } catch (IOException e) {
