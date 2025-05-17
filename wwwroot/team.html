@@ -30,6 +30,15 @@
             nav a:hover {
                 text-decoration: underline;
             }
+            nav a.active {
+                background-color: #4a90e2;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: default;
+                pointer-events: none;
+                text-decoration: none;
+            }
             section ul {
                 list-style: none;
                 padding-left: 0;
@@ -66,7 +75,7 @@
         <nav>
             <a href="index.html">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="team.html">Equipe</a>
+            <a class="active">Equipe</a>
         </nav>
     </header>
 
@@ -89,7 +98,11 @@
 
     <footer>
         <p>Projeto criado para a disciplina de Fundamentos de Redes de Computadores.</p>
-        <p>Repositório no GitHub: <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">https://github.com/marinamedeirosz/web-server</a></p>
+        <p>Repositório no GitHub: 
+            <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">
+                https://github.com/marinamedeirosz/web-server
+            </a>
+        </p>
     </footer>
 
     </body>

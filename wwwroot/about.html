@@ -30,6 +30,15 @@
             nav a:hover {
                 text-decoration: underline;
             }
+            nav a.active {
+                background-color: #4a90e2;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: default;
+                pointer-events: none;
+                text-decoration: none;
+            }
             footer {
                 font-size: 0.9em;
                 color: #555;
@@ -52,7 +61,7 @@
             <h1>Sobre o Projeto</h1>
             <nav>
                 <a href="index.html">Início</a>
-                <a href="about.html">Sobre</a>
+                <a class="active">Sobre</a>
                 <a href="team.html">Equipe</a>
             </nav>
         </header>
@@ -60,13 +69,17 @@
         <section>
             <p>Este projeto é um servidor web multithread simples desenvolvido em Java para a disciplina de Fundamentos de Redes de Computadores.</p>
             <p>Ele implementa um servidor TCP que atende requisições HTTP, servindo arquivos estáticos da pasta <code>wwwroot</code>.</p>
-            <p>O código foi baseado no desafio <a href="https://codingchallenges.fyi/challenges/challenge-webserver/" target="_blank" rel="noopener noreferrer">Coding Challenges - WebServer</a>.</p>
+            <p>O código foi baseado no desafio <a class="repo-link" href="https://codingchallenges.fyi/challenges/challenge-webserver/" target="_blank" rel="noopener noreferrer">Coding Challenges - WebServer</a>.</p>
             <p>O objetivo é demonstrar conceitos de sockets, multithreading, protocolos HTTP e segurança básica contra ataques como path traversal.</p>
         </section>
 
         <footer>
             <p>Projeto criado para a disciplina de Fundamentos de Redes de Computadores.</p>
-            <p>Repositório no GitHub: <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">https://github.com/marinamedeirosz/web-server</a></p>
+            <p>Repositório no GitHub: 
+                <a class="repo-link" href="https://github.com/marinamedeirosz/web-server" target="_blank" rel="noopener noreferrer">
+                    https://github.com/marinamedeirosz/web-server
+                </a>
+            </p>
         </footer>
     </body>
 </html>
