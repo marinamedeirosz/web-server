@@ -15,7 +15,7 @@ Este projeto é um servidor web simples implementado em Java que:
 ### Preparação
 
 1. Clone ou baixe o projeto.
-2. Crie uma pasta chamada `wwwroot` na raiz do projeto.
+2. Crie uma pasta chamada `wwwroot` na raiz do projeto ou utilize a pasta e arquivos já existentes.
 3. Coloque seus arquivos HTML ou TXT dentro da pasta `wwwroot`. Por exemplo, crie um arquivo `index.html`:
 
 ```html
@@ -37,7 +37,7 @@ Este projeto é um servidor web simples implementado em Java que:
 
 ### Compilar
 
-Compile os arquivos Java (assumindo que estão na pasta `src/`):
+Compile os arquivos Java:
 
 ```bash
 javac src/*.java -d out
