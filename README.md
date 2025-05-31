@@ -52,7 +52,7 @@ Isso criará os arquivos `.class` na pasta `out/`.
 Execute o servidor:
 
 ```bash
-java -cp out MultiThreadedWebServer [porta]
+java -cp out Server [porta]
 ```
 
 - `[porta]` é opcional (padrão: 8080)
@@ -60,13 +60,13 @@ java -cp out MultiThreadedWebServer [porta]
 Exemplo para porta padrão:
 
 ```bash
-java -cp out MultiThreadedWebServer
+java -cp out Server
 ```
 
 Exemplo para porta 80 (requer permissão de administrador/root):
 
 ```bash
-java -cp out MultiThreadedWebServer 80
+java -cp out Server 80
 ```
 
 ---
@@ -98,7 +98,7 @@ http://localhost:8080/team.html
 │   ├── team.html
 │   └── about.html
 ├── src/
-│   ├── MultiThreadedWebServer.java
+│   ├── Server.java
 │   └── ClientHandler.java
 ├── out/                   ← gerado após compilação
 └── README.md

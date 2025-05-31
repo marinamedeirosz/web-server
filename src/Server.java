@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class MultiThreadedWebServer {
+public class Server {
     private static final int DEFAULT_PORT = 8080;
 
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class MultiThreadedWebServer {
 
             while (true) {
                 Socket clientSocket = serverSocket.accept();
-             new Thread(new ClientHandler(clientSocket)).start();
+                new Thread(new ClientHandler(clientSocket)).start();
             }
 
         } catch (IOException e) {
